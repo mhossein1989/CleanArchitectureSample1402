@@ -24,7 +24,7 @@ namespace Mc2.CrudTest.Api.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<PaginatedList<CustomerDto>>> GetCustomerWithPagination([FromQuery] GetCustomerWithPaginationQuery query)
+        public async Task<ActionResult<PaginatedList<CustomerDto>>> GetCustomersWithPagination([FromQuery] GetCustomerWithPaginationQuery query)
         {
             return await Mediator.Send(query);
          

@@ -24,14 +24,14 @@ namespace Mc2.CrudTest.Api.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult<PaginatedList<CustomerDto>>> GetSuperheroesWithPagination([FromQuery] GetCustomerWithPaginationQuery query)
+        public async Task<ActionResult<PaginatedList<CustomerDto>>> GetCustomerWithPagination([FromQuery] GetCustomerWithPaginationQuery query)
         {
             return await Mediator.Send(query);
          
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<CustomerDto>> GetSuperhero(int id)
+        public async Task<ActionResult<CustomerDto>> GetCustomer(int id)
         {
             return await Mediator.Send(new GetCustomerQuery { Id = id });
         }

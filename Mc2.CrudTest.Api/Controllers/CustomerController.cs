@@ -14,9 +14,9 @@ namespace Mc2.CrudTest.Api.Controllers
     public class CustomerController : ApiControllerBase
     {
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<CustomerController> _logger;
 
-        public CustomerController(ILogger<WeatherForecastController> logger)
+        public CustomerController(ILogger<CustomerController> logger)
         {
             _logger = logger;
         }
